@@ -17,19 +17,17 @@ A simple Python-based automation testing tool that checks whether a website load
 - Requests
 
 ## Project Structure
-web_testing_tool
+web_testing_tool/
 │
-├── tests
-│ ├── test_page_load.py
-│ └── test_links.py
+├── tests/                 # Automated test cases
+│   ├── test_page_load.py  # Webpage loading test
+│   └── test_links.py      # Broken link validation
 │
-├── reports
-├── conftest.py
-├── main.py
-├── requirements.txt
+├── reports/               # Generated HTML test reports
+│
+├── conftest.py            # PyTest configuration and fixtures
+├── main.py                # CLI entry point for running tests
+├── requirements.txt       # Project dependencies
+└── README.md
 
 
-## Installation
-
-```bash
-pip install -r requirements.txt
